@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Water Seeker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  
+  <!-- 	<link rel="stylesheet" media="(min-width: 640px)" href="desktop.css"> -->
+  
+</head>
+
+<body>
+<!--   navigation bar -->
+<nav class="navbar">
+      <div class= "sub-nav">
+        <span class="navbar-toggle" onclick="mobileView()">
+            <i class="fa fa-bars"></i>
+        </span>
+      <span class="account-icon">
+          <i class="fa fa-user-circle"></i>
+      </span>
+        <a href="index.html" class="logo">WaterSeek</a>
+  </div>
+        <ul class="main-nav" id="menu">
+          
+            <li>
+                <a href="#" class="nav-links">Refill</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Found</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact</a>
+            </li>
+              <li>
+                <a href="login.html" class="nav-links" id="login">Login</a>
+            </li>
+        </ul>
+    </nav>
+<!-- end nav bar -->
+
+<!-- displaying user location -->
+  <button class="refill-button" onclick="getLocation()">
+    Click for location
+  </button>
+  <p>
+     location will be below
+  </p>
+  <p id="demo"></p>
+ <button onclick="myMap()">
+   click for map
+  </button>
+  <button onclick="increaseZoom()">
+  zoom in
+  </button>
+  <button onclick = "decreaseZoom()">
+    zoom out
+  </button>
+     <div id="map" style="width:80%;height:500px"></div>
+  
+<script>
+// </script>
+  
+  <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK-tYRKSntegB2K5LOHfM5ahIrOZOGZiI&callback=myMap"></script>
+  
+  <!-- 	google maps  -->
+
+  </body>
+</html>
